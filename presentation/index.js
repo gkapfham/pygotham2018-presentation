@@ -396,7 +396,7 @@ export default class Presentation extends Component {
             <Appear transitionDuration={100}>
               <Fill>
                 <Text bold textSize="2em" textColor="secondary">
-                  Ask and answer questions about effective instruction in the programming field
+                  Introduce strategies and tools for teaching programming
                 </Text>
               </Fill>
             </Appear>
@@ -496,26 +496,6 @@ export default class Presentation extends Component {
         {/* Slide } */}
 
         {/* SECTION: Motivation { */}
-
-        {/* Slide { */}
-        <Slide transitionDuration={0} transition={['slide']} bgColor="primary">
-          <Layout>
-            <Heading fit size={1} textColor="darktext">
-              <CommentsShiftUp/> Why would I
-            </Heading>
-          </Layout>
-          <Layout>
-            <Text height={standardHorizontalPadding}>
-              &nbsp;
-            </Text>
-          </Layout>
-          <Layout>
-              <Heading caps fill size={1} lineHeight={1.2} textFont={questionFont} textAlign="left" textColor="tertiary">
-                decide to use GitHub and Travis CI?
-              </Heading>
-          </Layout>
-        </Slide>
-        {/* Slide } */}
 
         {/* Slide { */}
         <Slide transition={['']} bgColor="primary">
