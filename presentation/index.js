@@ -305,7 +305,7 @@ export default class Presentation extends Component {
             Using Python, Travis CI, and GitHub to Effectively Teach Programming
           </Text>
 
-          <Heading size={3} fit lineHeight={1.5} bold textColor="darktext">
+          <Heading size={3} fit bold lineHeight={1.5} textFont="secondary" textColor="darktext">
             Gregory M. Kapfhammer
           </Heading>
 

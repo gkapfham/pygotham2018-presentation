@@ -24,8 +24,8 @@ const defaultColors = {
 };
 
 const defaultFonts = {
-  primary: 'Noto Sans',
-  secondary: 'Open Sans',
+  primary: 'Lato',
+  secondary: 'Noto Sans',
   tertiary: 'monospace'
 };
 
