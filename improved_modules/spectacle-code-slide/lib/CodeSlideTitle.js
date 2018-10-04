@@ -16,7 +16,7 @@ var styles = {
   top: '20px',
   transform: 'translate(-50%)',
   padding: '20px 40px',
-  border: '10px solid #d84315',
+  border: '10px solid #c62828',
   fontSize: '2.5em',
   color: '#212121',
   // textTransform: 'uppercase',
