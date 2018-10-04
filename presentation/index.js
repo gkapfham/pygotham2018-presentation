@@ -692,7 +692,6 @@ export default class Presentation extends Component {
         </Slide>
         {/* Slide } */}
 
-
         {/* SECTION: Motivation } */}
 
         {/* SECTION: Configure { */}
@@ -761,34 +760,6 @@ export default class Presentation extends Component {
           <Heading fill bold caps size={1} lineHeight={1.1} textColor="tertiary">
             The starter repository should <em>not</em> pass the tests
           </Heading>
-        </Slide>
-        {/* Slide } */}
-
-        {/* Slide { */}
-        <Slide transition={['slide', 'spin']}>
-          <Heading fit size={1} textColor="darktext">
-            Create an assignment using the starter
-          </Heading>
-          <Layout>
-            <Text height={standardHorizontalPadding}>
-              &nbsp;
-            </Text>
-          </Layout>
-          <Image src={images.CreateAssignment}/>
-        </Slide>
-        {/* Slide } */}
-
-        {/* Slide { */}
-        <Slide transition={['slide']}>
-          <Heading fit size={1} textColor="darktext">
-            A classroom will contain many assignments
-          </Heading>
-          <Layout>
-            <Text height={standardHorizontalPadding}>
-              &nbsp;
-            </Text>
-          </Layout>
-          <Image src={images.ExampleAssignments}/>
         </Slide>
         {/* Slide } */}
 
