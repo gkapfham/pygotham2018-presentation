@@ -301,13 +301,14 @@ export default class Presentation extends Component {
         {/* Slide { */}
         <Slide transition={['slide', 'spin']} bgColor="primary">
 
-          <Heading size={1} fit bold lineHeight={1.5} bold textColor="darktext">
+          <Text fit bold lineHeight={1.5} textColor="tertiary">
             Using Python, Travis CI, and GitHub
-          </Heading>
+            to Effectively
+          </Text>
 
-          <Heading size={1} fit bold lineHeight={1.5} bold textColor="darktext">
-            to Effectively Teach Programming
-          </Heading>
+          <Text fit bold lineHeight={1.5} textColor="tertiary">
+            Teach Programming
+          </Text>
 
           <Layout>
             <Text height={standardHorizontalPadding}>
@@ -315,9 +316,14 @@ export default class Presentation extends Component {
             </Text>
           </Layout>
 
-          <Text fit bold lineHeight={1.5} textColor="tertiary">
+          <Heading size={3} fit lineHeight={1.5} bold textColor="secondary">
             Gregory M. Kapfhammer
+          </Heading>
+
+          <Text fit bold lineHeight={1.5} textColor="tertiary">
+            Gregory M. Kapfhammer!
           </Text>
+
 
           <Text bold textSize="1.5em" textColor="tertiary">
             October 5 at PyGotham 2018
