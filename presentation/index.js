@@ -80,17 +80,17 @@ var questionFont = 'Roboto Slab';
 var primary = '#bdbdbd';
 var secondary =  '#c62828';
 var secondarylight = '#ff6e40';
-var tertiary = '#1565c0';
+var tertiary = '#283593';
 var lighttext = '#9e9e9e';
 var darktext = '#212121';
 var lighttext = '#9e9e9e';
 
 {/* Spectacle: Define the colors for the theme */}
 const theme = createTheme({
-  primary: '#bdbdbd',
-  secondary: '#c62828',
+  primary: '#9e9e9e',
+  secondary: '#b71c1c',
   secondarylight: '#ff6e40',
-  tertiary: '#1565c0',
+  tertiary: '#283593',
   darktext: '#212121',
   lighttext: '#9e9e9e'
 });
@@ -164,7 +164,7 @@ library.add(fab, far, fas)
 {/* Declare all of the specific icons used in the slides */}
 
 export const Archive = () => (
-  <FontAwesomeIcon icon={['fas', 'cubes']} transform="grow-18" color={darktext}/>
+  <FontAwesomeIcon icon={[]} transform="grow-18" color={darktext}/>
 )
 
 export const Arrow = () => (
@@ -253,7 +253,7 @@ export const Travis = () => (
 
 export const Twitter = () => (
   <div>
-    <FontAwesomeIcon icon={['fab', 'twitter']} size="3x" transform="left-2" color="#1565c0"/>
+    <FontAwesomeIcon icon={['fab', 'twitter']} size="3x" transform="left-2" color="#283593"/>
   </div>
 )
 
@@ -263,7 +263,7 @@ export const Trophy = () => (
 
 export const Web = () => (
   <div>
-    <FontAwesomeIcon icon={['fas', 'globe']} size="3x" transform="left-2" color="#1565c0"/>
+    <FontAwesomeIcon icon={['fas', 'globe']} size="3x" transform="left-2" color="#283593"/>
   </div>
 )
 
@@ -396,12 +396,20 @@ export default class Presentation extends Component {
             <Appear transitionDuration={100}>
               <Fill>
                 <Text bold textSize="2em" textColor="secondary">
-                  Introduce strategies and tools for teaching programming
+                  Introduce strategies and tools for effectively teaching programming
                 </Text>
               </Fill>
             </Appear>
           </Layout>
 
+        </Slide>
+        {/* Slide } */}
+
+        {/* Slide { */}
+        <Slide transition={['']} bgColor="primary">
+          <Heading fill bold caps size={1} lineHeight={1.1} textColor="tertiary">
+            Use industry standard tools in all course work
+          </Heading>
         </Slide>
         {/* Slide } */}
 
@@ -571,14 +579,6 @@ export default class Presentation extends Component {
             <ListItem margin={minimalHorizontalPadding}>Data Files</ListItem>
           </List>
           </Appear>
-        </Slide>
-        {/* Slide } */}
-
-        {/* Slide { */}
-        <Slide transition={['']} bgColor="primary">
-          <Heading fill bold caps size={1} lineHeight={1.1} textColor="tertiary">
-            Use industry standard tools in all course work
-          </Heading>
         </Slide>
         {/* Slide } */}
 
