@@ -980,26 +980,6 @@ export default class Presentation extends Component {
         {/* SECTION: Conclusion { */}
 
         {/* Slide { */}
-        <Slide transition={['slide']} bgColor="primary">
-          <Layout>
-            <Heading fit size={1} textColor="darktext">
-              <CommentsShiftUp/> How can we
-            </Heading>
-          </Layout>
-          <Layout>
-            <Text height={standardHorizontalPadding}>
-              &nbsp;
-            </Text>
-          </Layout>
-          <Layout>
-            <Heading caps fill size={1} lineHeight={1.2} textFont={questionFont} textAlign="left" textColor="tertiary">
-              improve and study this approach?
-            </Heading>
-          </Layout>
-        </Slide>
-        {/* Slide } */}
-
-        {/* Slide { */}
         <Slide transitionDuration={0} transition={['']} bgColor="primary">
           <Heading fit textColor="darktext">
             Ideas for Experiments
@@ -1097,53 +1077,11 @@ export default class Presentation extends Component {
             </Fill>
             <Fill>
               <Heading size={4} textColor="secondary" margin={standardMargin}>
-                Defect Reports
+                Bug Reports
               </Heading>
             </Fill>
           </Layout>
 
-        </Slide>
-        {/* Slide } */}
-
-        {/* Slide { */}
-        <Slide transition={['spin', 'slide']}>
-          <Heading fit size={1} textColor="darktext">
-            GitHub Classroom developers are great!
-          </Heading>
-          <Layout>
-            <Text height={standardHorizontalPadding}>
-              &nbsp;
-            </Text>
-          </Layout>
-          <Image src={images.ClassroomDefect}/>
-        </Slide>
-        {/* Slide } */}
-
-        {/* Slide { */}
-        <Slide transition={['slide']}>
-          <Heading fit size={1} textColor="darktext">
-            Review these slides on SpeakerDeck
-          </Heading>
-          <Layout>
-            <Text height={standardHorizontalPadding}>
-              &nbsp;
-            </Text>
-          </Layout>
-          <Image src={images.SpeakerDeck}/>
-        </Slide>
-        {/* Slide } */}
-
-        {/* Slide { */}
-        <Slide transition={['slide']}>
-          <Heading fit size={1} textColor="darktext">
-            See slide source code on GitHub
-          </Heading>
-          <Layout>
-            <Text height={standardHorizontalPadding}>
-              &nbsp;
-            </Text>
-          </Layout>
-          <Image src={images.PresentationRepo}/>
         </Slide>
         {/* Slide } */}
 
@@ -1157,7 +1095,6 @@ export default class Presentation extends Component {
               &nbsp;
             </Text>
           </Layout>
-          {/* TODO: Update the image when it is moved */}
           <Image src={images.GatorGrader}/>
         </Slide>
         {/* Slide } */}
@@ -1217,15 +1154,12 @@ export default class Presentation extends Component {
         </Slide>
         {/* Slide } */}
 
-
         {/* SECTION: Conclusion } */}
 
         {/* Slide { */}
         <Slide bgColor="primary">
         </Slide>
         {/* Slide } */}
-
-
 
       </Deck>
     );
