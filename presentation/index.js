@@ -37,9 +37,6 @@ import {
   GoToAction
 } from 'spectacle';
 
-{/* Load in an external plugin */}
-import Terminal from '../improved_modules/spectacle-terminal';
-
 {/* Load in a modified external plugin */}
 import CodeSlide from '../improved_modules/spectacle-code-slide';
 
