@@ -715,14 +715,6 @@ export default class Presentation extends Component {
         {/* SECTION: Configure { */}
 
         {/* Slide { */}
-        <Slide transition={['']} bgColor="primary">
-          <Heading fill bold caps size={1} lineHeight={1.1} textColor="tertiary">
-            Create two repositories for each assignment
-          </Heading>
-        </Slide>
-        {/* Slide { */}
-
-        {/* Slide { */}
         <Slide bgColor="primary">
           <Heading fit textColor="darktext">
             Flexible Checking
@@ -758,6 +750,14 @@ export default class Presentation extends Component {
           </Layout>
         </Slide>
         {/* Slide } */}
+
+        {/* Slide { */}
+        <Slide transition={['']} bgColor="primary">
+          <Heading fill bold caps size={1} lineHeight={1.1} textColor="tertiary">
+            Create two repositories for each assignment
+          </Heading>
+        </Slide>
+        {/* Slide { */}
 
         {/* Slide { */}
         <Slide bgColor="primary">
