@@ -195,6 +195,10 @@ export const GitHub = () => (
   <FontAwesomeIcon icon={['fab', 'github']} transform="grow-20" color={darktext}/>
 )
 
+export const GitHubGiant = () => (
+  <FontAwesomeIcon icon={['fab', 'github']} transform="grow-40" color={darktext}/>
+)
+
 export const Globe = () => (
   <FontAwesomeIcon icon={['fas', 'globe']} transform="grow-18" color={darktext}/>
 )
@@ -477,8 +481,8 @@ export default class Presentation extends Component {
 
         <Layout>
           <Fill>
-            <Heading margin={standardMargin*2} size={1}><GitHub/></Heading>
-            <Heading fit size={1} textColor="secondary">GitHub</Heading>
+            <Heading margin={standardMargin*3} size={1}><GitHubGiant/></Heading>
+            <Heading fit size={2} textColor="secondary">GitHub</Heading>
           </Fill>
         </Layout>
 
