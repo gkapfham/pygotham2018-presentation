@@ -669,6 +669,30 @@ export default class Presentation extends Component {
         </Slide>
         {/* Slide } */}
 
+        {/* Slide { */}
+        <Slide transition={['']} bgColor="primary">
+          <Heading fill bold caps size={1} lineHeight={1.1} textColor="tertiary">
+            Design principles that guided tool implementation
+          </Heading>
+
+          <Layout>
+            <Text height={standardHorizontalPadding}>
+            &nbsp;
+            </Text>
+          </Layout>
+
+          <Text bold textSize="1.5em" textColor="darktext">
+            Inspired by John Ousterhout's
+          </Text>
+
+          <Text bold textSize="1.5em" textColor="darktext">
+            <em>A Philosophy of Software Design</em>
+          </Text>
+
+        </Slide>
+        {/* Slide } */}
+
+
         {/* SECTION: Motivation } */}
 
         {/* SECTION: Configure { */}
