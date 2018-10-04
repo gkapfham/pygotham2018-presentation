@@ -78,7 +78,7 @@ var questionFont = 'Roboto Slab';
 
 {/* FontAwesome: Define the colors for the theme */}
 var primary = '#bdbdbd';
-var secondary =  '#d84315';
+var secondary =  '#c62828';
 var secondarylight = '#ff6e40';
 var tertiary = '#1565c0';
 var lighttext = '#9e9e9e';
@@ -88,7 +88,7 @@ var lighttext = '#9e9e9e';
 {/* Spectacle: Define the colors for the theme */}
 const theme = createTheme({
   primary: '#bdbdbd',
-  secondary: '#d84315',
+  secondary: '#c62828',
   secondarylight: '#ff6e40',
   tertiary: '#1565c0',
   darktext: '#212121',
@@ -301,31 +301,15 @@ export default class Presentation extends Component {
         {/* Slide { */}
         <Slide transition={['slide', 'spin']} bgColor="primary">
 
-          <Text fit bold lineHeight={1.5} textColor="tertiary">
-            Using Python, Travis CI, and GitHub
-            to Effectively
+          <Text bold textSize="3em" lineHeight={2.5} textColor="secondary">
+            Using Python, Travis CI, and GitHub to Effectively Teach Programming
           </Text>
 
-          <Text fit bold lineHeight={1.5} textColor="tertiary">
-            Teach Programming
-          </Text>
-
-          <Layout>
-            <Text height={standardHorizontalPadding}>
-            &nbsp;
-            </Text>
-          </Layout>
-
-          <Heading size={3} fit lineHeight={1.5} bold textColor="secondary">
+          <Heading size={3} fit lineHeight={1.5} bold textColor="darktext">
             Gregory M. Kapfhammer
           </Heading>
 
-          <Text fit bold lineHeight={1.5} textColor="tertiary">
-            Gregory M. Kapfhammer!
-          </Text>
-
-
-          <Text bold textSize="1.5em" textColor="tertiary">
+          <Text bold textSize="1.5em" textColor="darktext">
             October 5 at PyGotham 2018
           </Text>
 
