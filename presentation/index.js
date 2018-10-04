@@ -164,7 +164,7 @@ library.add(fab, far, fas)
 {/* Declare all of the specific icons used in the slides */}
 
 export const Archive = () => (
-  <FontAwesomeIcon icon={[]} transform="grow-18" color={darktext}/>
+  <FontAwesomeIcon icon={['fas', 'cubes']} transform="grow-18" color={darktext}/>
 )
 
 export const Arrow = () => (
@@ -409,6 +409,14 @@ export default class Presentation extends Component {
         <Slide transition={['']} bgColor="primary">
           <Heading fill bold caps size={1} lineHeight={1.1} textColor="tertiary">
             Use industry standard tools in all course work
+          </Heading>
+        </Slide>
+        {/* Slide } */}
+
+        {/* Slide { */}
+        <Slide transition={['']} bgColor="primary">
+          <Heading fill bold caps size={1} lineHeight={1.1} textColor="tertiary">
+            Suitable for instructors in industry or academia
           </Heading>
         </Slide>
         {/* Slide } */}
@@ -742,27 +750,7 @@ export default class Presentation extends Component {
 
         {/* SECTION: Configure } */}
 
-        {/* SECTION: Check { */}
-
-        {/* Slide { */}
-        <Slide transition={['slide']} bgColor="primary">
-          <Layout>
-            <Heading fit size={1} textColor="darktext">
-              <CommentsShiftUp/> How do you
-            </Heading>
-          </Layout>
-          <Layout>
-            <Text height={standardHorizontalPadding}>
-              &nbsp;
-            </Text>
-          </Layout>
-          <Layout>
-              <Heading fill caps size={1} lineHeight={1.2} textFont={questionFont} textAlign="left" textColor="tertiary">
-               automatically check student submissions?
-              </Heading>
-          </Layout>
-        </Slide>
-        {/* Slide } */}
+        {/* SECTION: Design Principles { */}
 
         {/* Slide { */}
         <Slide bgColor="primary">
