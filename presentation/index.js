@@ -235,6 +235,10 @@ export const Python = () => (
   <FontAwesomeIcon icon={['fab', 'python']} transform="grow-20" color={darktext}/>
 )
 
+export const PythonGiant = () => (
+  <FontAwesomeIcon icon={['fab', 'python']} transform="grow-40" color={darktext}/>
+)
+
 export const RepoFull = () => (
   <FontAwesomeIcon icon={['fas', 'square']} transform="grow-20" color={darktext}/>
 )
@@ -253,6 +257,10 @@ export const Toggle = () => (
 
 export const Travis = () => (
   <FontAwesomeIcon icon={['fas', 'user-secret']} transform="grow-20" color={darktext}/>
+)
+
+export const TravisGiant = () => (
+  <FontAwesomeIcon icon={['fas', 'user-secret']} transform="grow-40" color={darktext}/>
 )
 
 export const Twitter = () => (
@@ -482,7 +490,7 @@ export default class Presentation extends Component {
         <Layout>
           <Fill>
             <Heading margin={standardMargin*3} size={1}><GitHubGiant/></Heading>
-            <Heading fit size={2} textColor="secondary">GitHub</Heading>
+            <Heading fit size={1} textColor="secondary">GitHub</Heading>
           </Fill>
         </Layout>
 
@@ -494,7 +502,7 @@ export default class Presentation extends Component {
 
         <Layout>
           <Fill>
-            <Heading margin={standardMargin*2} size={1}><Travis/></Heading>
+            <Heading margin={standardMargin*2} size={1}><TravisGiant/></Heading>
             <Heading fit size={1} textColor="secondary">Travis</Heading>
           </Fill>
         </Layout>
@@ -507,7 +515,7 @@ export default class Presentation extends Component {
 
         <Layout>
           <Fill>
-            <Heading margin={standardMargin*2} size={1}><Python/></Heading>
+            <Heading margin={standardMargin*3} size={1}><PythonGiant/></Heading>
             <Heading fit size={1} textColor="secondary">Python</Heading>
           </Fill>
         </Layout>
@@ -597,6 +605,14 @@ export default class Presentation extends Component {
         {/* Slide { */}
         <Slide transition={['']} bgColor="primary">
           <Heading fill bold caps size={1} lineHeight={1.1} textColor="tertiary">
+            Leverage existing tools whenever possible
+          </Heading>
+        </Slide>
+        {/* Slide } */}
+
+        {/* Slide { */}
+        <Slide transition={['']} bgColor="primary">
+          <Heading fill bold caps size={1} lineHeight={1.1} textColor="tertiary">
             Develop new solutions in Python when necessary
           </Heading>
         </Slide>
@@ -658,7 +674,7 @@ export default class Presentation extends Component {
         {/* SECTION: Configure { */}
 
         {/* Slide { */}
-        <Slide bgColor="primary">
+        <Slide transition={['']} bgColor="primary">
           <Heading fill bold caps size={1} lineHeight={1.1} textColor="tertiary">
             Create two repositories for each assignment
           </Heading>
