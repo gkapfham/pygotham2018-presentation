@@ -1,34 +1,34 @@
-# use both Python and Java
-sudo: required
+# use Java and non-root
 dist: trusty
-language: python
-python:
-  - '3.6'
-before_install:
-  - jdk_switcher use oraclejdk8
+sudo: false
+language: Java
+jdk: oraclejdk8
 
-# download gradle
-before_script:
+# ignore the virtualenv that Travis creates
+env:
+  global:
+    - PIPENV_VENV_IN_PROJECT=1
+    - PIPENV_IGNORE_VIRTUALENVS=1
+
+# install the Markdown linting program called mdl
+before_install:
+  - gem install mdl
+  # download gradle as a zip file
   - wget https://services.gradle.org/distributions/gradle-4.6-bin.zip
   - unzip -d $HOME gradle-4.6-bin.zip
+  # delete the downloaded file
   - rm -rf gradle-4.6-bin.zip
+  # add gradle bin to path at the beginning to ensure it overwrites old gradle
   - export PATH="$HOME/gradle-4.6/bin:$PATH"
-
-# install linting tools
-before_install:
-  - sudo apt-get update
-  - gem install mdl
+  # switch to Python 3.6.3 globally, install python dependencies
+  - pyenv global 3.6.3
+  - pip install --upgrade pip
   - pip install proselint
+  - pip install pipenv
+  # do not allow Travis to use standard error for debugging purposes
+  - unset _JAVA_OPTIONS
 
-# install GatorGrader
-install:
-  - ./gatorgrader.sh --start
-  - cd gatorgrader
-  - pip3 install --upgrade pip
-  - pip3 install -r requirements.txt --cache-dir $HOME/.pip-cache
-  - cd ..
-
-# improve build speed
+# cache to improve build speed
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
@@ -38,23 +38,23 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
 
-# run checks
+# delete any cached version of GatorGrader and require a fresh installation
+before_script:
+  - rm -rf $HOME/.local/share/gatorgrader
+
+# run checks on the README file with mdl and proselint
+# run checks on a student's Java code through gradle and GatorGrader
+# run checks on a student's Markdown writing through GatorGrader
+# note: "gradle grade" will install GatorGrader and run all checks
 script:
-  # Java
-  - gradle --version
-  - gradle clean check
-  - gradle build
-  # GatorGrader
-  - ./gatorgrader.sh --check
-  # Markdown
+  # lint the assignment's documentation
   - mdl README.md
-  - mdl writing/reflection.md
-
-
-
-
-
-
-
-
-
+  - proselint README.md
+  # Java: see build.gradle
+  - gradle --version
+  - gradle clean
+  - gradle check
+  - gradle build
+  - gradle run
+  # GatorGrader: see config/gatorgrader.yml
+  - gradle grade -x build
