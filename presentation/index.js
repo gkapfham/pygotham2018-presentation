@@ -370,7 +370,6 @@ export default class Presentation extends Component {
 
         {/* Slide { */}
         <Slide transitionDuration={0} transition={['']} bgColor="primary">
-
           <Layout>
             <Appear transitionDuration={100}>
               <Fill>
@@ -381,13 +380,11 @@ export default class Presentation extends Component {
               </Fill>
             </Appear>
           </Layout>
-
           <Layout>
             <Text height={standardHorizontalPadding*2}>
               &nbsp;
             </Text>
           </Layout>
-
           <Layout>
             <Appear transitionDuration={100}>
               <Fill>
@@ -397,7 +394,6 @@ export default class Presentation extends Component {
               </Fill>
             </Appear>
           </Layout>
-
         </Slide>
         {/* Slide } */}
 
@@ -694,6 +690,67 @@ export default class Presentation extends Component {
         </Slide>
         {/* Slide } */}
 
+        {/* Slide { */}
+        <Slide transitionDuration={0} transition={['']} bgColor="primary">
+          <Layout>
+            <Appear transitionDuration={100}>
+              <Fill>
+                <Text bold fit textSize="3em" textColor="darktext">
+                  <Map/>
+                  Design Principles
+                </Text>
+              </Fill>
+            </Appear>
+          </Layout>
+          <Layout>
+            <Text height={standardHorizontalPadding*2}>
+              &nbsp;
+            </Text>
+          </Layout>
+
+          <Layout>
+            <Appear transitionDuration={100}>
+              <Fill>
+                <Text bold textSize="1.25em" height={standardHorizontalPadding*2} textColor="secondary">
+                  Working code is not sufficient: aim for simplicity
+                </Text>
+              </Fill>
+            </Appear>
+          </Layout>
+
+          <Layout>
+            <Appear transitionDuration={100}>
+              <Fill>
+                <Text bold textSize="1.25em" height={standardHorizontalPadding*2} textColor="secondary">
+                  Code that hasn't been executed does not work
+                </Text>
+              </Fill>
+            </Appear>
+          </Layout>
+
+          <Layout>
+            <Appear transitionDuration={100}>
+              <Fill>
+                <Text bold textSize="1.25em" height={standardHorizontalPadding*2} textColor="secondary">
+                  Prefer simple interfaces over simple implementations
+                </Text>
+              </Fill>
+            </Appear>
+          </Layout>
+
+          <Layout>
+            <Appear transitionDuration={100}>
+              <Fill>
+                <Text bold textSize="1.25em" height={standardHorizontalPadding*2} textColor="secondary">
+                  Effective documentation enables contributions
+                </Text>
+              </Fill>
+            </Appear>
+          </Layout>
+
+        </Slide>
+        {/* Slide } */}
+
         {/* SECTION: Motivation } */}
 
         {/* SECTION: Configure { */}
@@ -732,6 +789,17 @@ export default class Presentation extends Component {
               </Heading>
             </Fill>
           </Layout>
+
+          <Layout>
+            <Appear transitionDuration={100}>
+              <Fill>
+                <Text bold textSize="1.25em" height={standardHorizontalPadding*2} textColor="tertiary">
+                  See projects like GatorGrader and GatorGradle in the GatorEducator organization on GitHub
+                </Text>
+              </Fill>
+            </Appear>
+          </Layout>
+
         </Slide>
         {/* Slide } */}
 
@@ -1014,14 +1082,6 @@ export default class Presentation extends Component {
 
         {/* Slide { */}
         <Slide transitionDuration={0} transition={['']} bgColor="primary">
-          <Heading fill bold caps size={1} lineHeight={1.1} textColor="tertiary">
-            Check out GatorGrader and affiliated tools on GitHub!
-          </Heading>
-        </Slide>
-        {/* Slide } */}
-
-        {/* Slide { */}
-        <Slide transitionDuration={0} transition={['']} bgColor="primary">
           <Heading fit textColor="darktext">
             Let's Collaborate
           </Heading>
@@ -1056,6 +1116,16 @@ export default class Presentation extends Component {
                 Bug Reports
               </Heading>
             </Fill>
+          </Layout>
+
+          <Layout>
+            <Appear transitionDuration={100}>
+              <Fill>
+                <Text bold textSize="1.25em" height={standardHorizontalPadding*2} textColor="tertiary">
+                  See projects like GatorGrader and GatorGradle in the GatorEducator organization on GitHub
+                </Text>
+              </Fill>
+            </Appear>
           </Layout>
 
         </Slide>
