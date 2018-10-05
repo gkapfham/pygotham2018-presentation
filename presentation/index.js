@@ -17,7 +17,6 @@ import {
   Fill,
   Fit,
   Heading,
-  Image,
   Layout,
   Link,
   ListItem,
@@ -46,23 +45,8 @@ import preloader from 'spectacle/lib/utils/preloader';
 {/* Import the theme */}
 import createTheme from '../default';
 
+{/* Handle non-compatible browsers */}
 require('normalize.css');
-
-{/* Load all of the images */}
-const images = {
-  CreateOrganization: require('../assets/images/CreateOrganization.png'),
-  StartingOrganization: require('../assets/images/StartingOrganization.png'),
-  GrantAccess: require('../assets/images/GrantAccess.png'),
-  CreateRoster: require('../assets/images/CreateRoster.png'),
-  StartCreatingAssignments: require('../assets/images/StartCreatingAssignments.png'),
-  CreateAssignment: require('../assets/images/CreateAssignment.png'),
-  ExampleAssignments: require('../assets/images/ExampleAssignments.png'),
-  ClassroomDefect: require('../assets/images/ClassroomDefect.png'),
-  SpeakerDeck: require('../assets/images/SpeakerDeck.png'),
-  PresentationRepo: require('../assets/images/PresentationRepo.png'),
-  GatorGrader: require('../assets/images/GatorGrader.png'),
-};
-preloader(images);
 
 {/* Minimal horizontal padding between rows */}
 var minimalHorizontalPadding = 20;
