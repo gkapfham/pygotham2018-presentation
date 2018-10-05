@@ -729,8 +729,8 @@ export default class Presentation extends Component {
           <Layout>
             <Appear transitionDuration={100}>
               <Fill>
-                <Text bold textSize="1.25em" height={standardHorizontalPadding*2} textColor="secondary">
-                  Working code is not sufficient: aim for simplicity
+                <Text bold textSize="1.35em" height={standardHorizontalPadding*2} textColor="secondary">
+                    ‣ Working code is not sufficient: aim for simplicity
                 </Text>
               </Fill>
             </Appear>
@@ -739,8 +739,8 @@ export default class Presentation extends Component {
           <Layout>
             <Appear transitionDuration={100}>
               <Fill>
-                <Text bold textSize="1.25em" height={standardHorizontalPadding*2} textColor="secondary">
-                  Code that hasn't been executed does not work
+                <Text bold textSize="1.35em" height={standardHorizontalPadding*2} textColor="secondary">
+                  ‣ Code that hasn't been executed does not work
                 </Text>
               </Fill>
             </Appear>
@@ -749,8 +749,8 @@ export default class Presentation extends Component {
           <Layout>
             <Appear transitionDuration={100}>
               <Fill>
-                <Text bold textSize="1.25em" height={standardHorizontalPadding*2} textColor="secondary">
-                  Prefer simple interfaces over simple implementations
+                <Text bold textSize="1.35em" height={standardHorizontalPadding*2} textColor="secondary">
+                  ‣ Simple interfaces over simple implementations
                 </Text>
               </Fill>
             </Appear>
@@ -759,8 +759,8 @@ export default class Presentation extends Component {
           <Layout>
             <Appear transitionDuration={100}>
               <Fill>
-                <Text bold textSize="1.25em" height={standardHorizontalPadding*2} textColor="secondary">
-                  Effective documentation enables contributions
+                <Text bold textSize="1.35em" height={standardHorizontalPadding*2} textColor="secondary">
+                  ‣ Effective documentation enables contributions
                 </Text>
               </Fill>
             </Appear>
@@ -961,7 +961,7 @@ export default class Presentation extends Component {
           </List>
           </Appear>
           <Layout>
-            <Text height={standardHorizontalPadding}>
+            <Text height={standardHorizontalPadding*.5}>
               &nbsp;
             </Text>
           </Layout>
@@ -970,6 +970,17 @@ export default class Presentation extends Component {
             Different topics, goals, languages, and levels
           </Heading>
           </Appear>
+          <Layout>
+            <Text height={standardHorizontalPadding}>
+              &nbsp;
+            </Text>
+          </Layout>
+          <Appear>
+          <Heading fit textColor="secondary">
+            Laboratory, practical, in-class
+          </Heading>
+          </Appear>
+
         </Slide>
         {/* Slide } */}
 
