@@ -400,7 +400,7 @@ export default class Presentation extends Component {
         {/* Slide { */}
         <Slide transition={['']} bgColor="primary">
           <Heading fill bold caps size={1} lineHeight={1.1} textColor="tertiary">
-            Use industry standard tools in all course work
+            Use industry standard software in all courses
           </Heading>
         </Slide>
         {/* Slide } */}
@@ -559,7 +559,7 @@ export default class Presentation extends Component {
         {/* Slide { */}
         <Slide transition={['']} bgColor="primary">
           <Heading fill bold caps size={1} lineHeight={1.1} textColor="tertiary">
-            Help students and faculty effectively collaborate
+            Help students and teachers effectively collaborate
           </Heading>
         </Slide>
         {/* Slide } */}
@@ -587,6 +587,24 @@ export default class Presentation extends Component {
           <Heading fill bold caps size={1} lineHeight={1.1} textColor="tertiary">
             Leverage existing tools whenever possible
           </Heading>
+        </Slide>
+        {/* Slide } */}
+
+        {/* Slide { */}
+        <Slide transition={['']} bgColor="primary">
+          <Heading fit textColor="darktext">
+            Tools to Support Checks
+          </Heading>
+          <Appear transitionDuration={100}>
+          <List bold textColor={darktext} textAlign="left" textSize="2em" margin={minimalHorizontalPadding} start={1}>
+            <ListItem margin={minimalHorizontalPadding}>Source code linting</ListItem>
+            <ListItem margin={minimalHorizontalPadding}>Markdown linting</ListItem>
+            <ListItem margin={minimalHorizontalPadding}>Prose checking</ListItem>
+            <ListItem margin={minimalHorizontalPadding}>JUnit test suite</ListItem>
+            <ListItem margin={minimalHorizontalPadding}>Pytest test suite</ListItem>
+            <ListItem margin={minimalHorizontalPadding}>Automated build tools</ListItem>
+          </List>
+          </Appear>
         </Slide>
         {/* Slide } */}
 
@@ -926,7 +944,7 @@ export default class Presentation extends Component {
         {/* Slide { */}
         <Slide bgColor="primary">
           <Heading fit textColor="darktext">
-            Previous Courses and Topics
+            Courses and Topics
           </Heading>
           <Layout>
             <Text height={standardHorizontalPadding}>
@@ -939,6 +957,7 @@ export default class Presentation extends Component {
             <ListItem margin={minimalHorizontalPadding}>Data Abstraction</ListItem>
             <ListItem margin={minimalHorizontalPadding}>Web Development</ListItem>
             <ListItem margin={minimalHorizontalPadding}>Software Engineering</ListItem>
+            <ListItem margin={minimalHorizontalPadding}>Artificial Intelligence</ListItem>
           </List>
           </Appear>
           <Layout>
