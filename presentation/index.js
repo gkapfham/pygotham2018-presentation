@@ -461,6 +461,22 @@ export default class Presentation extends Component {
             </Fill>
           </Layout>
 
+          <Layout>
+            <Text height={standardHorizontalPadding}>
+              &nbsp;
+            </Text>
+          </Layout>
+
+          <Layout>
+            <Appear transitionDuration={100}>
+              <Fill>
+                <Text bold textSize="1.5em" height={standardHorizontalPadding*2} textColor="tertiary">
+                  Let's explore each of these in greater detail!
+                </Text>
+              </Fill>
+            </Appear>
+          </Layout>
+
         </Slide>
         {/* Slide } */}
 
@@ -654,7 +670,7 @@ export default class Presentation extends Component {
             </Fill>
             <Fill>
               <Heading size={4} textColor="secondary" margin={standardMargin}>
-                Options
+                Packages
               </Heading>
             </Fill>
             <Fill>
@@ -760,7 +776,7 @@ export default class Presentation extends Component {
             <Appear transitionDuration={100}>
               <Fill>
                 <Text bold textSize="1.35em" height={standardHorizontalPadding*2} textColor="secondary">
-                  ‣ Effective documentation enables contributions
+                  ‣ Great documentation encourages contributions
                 </Text>
               </Fill>
             </Appear>
@@ -958,19 +974,17 @@ export default class Presentation extends Component {
             { loc: [0, 270], title: 'Let\'s Configure Travis CI',
               note: 'Travis CI runs private builds for every student' },
             { loc: [0, 5], title: 'Use Java and Python',
-              note: 'Java is the main language for this course' },
+              note: 'Java is the main language for this introductory course' },
             { loc: [6, 11], title: 'Configure Pipenv',
               note: 'Ensure that Pipenv works well with Travis' },
             { loc: [13, 18], title: 'Install Supporting Tools',
-              note: 'Install and configure Gradle and other useful tools' },
-            { loc: [22, 29], title: 'Install GatorGrader',
-              note: 'GatorGrader is a sub-module in the repository' },
-            { loc: [40, 46], title: 'Run Gradle',
-              note: 'Use Gradle to build program and run tests' },
-            { loc: [46, 48], title: 'Run GatorGrader',
-              note: 'This script will repeatedly invoke GatorGrader' },
-            { loc: [48, 51], title: 'Run Linters',
-              note: 'Identify obvious technical writing mistakes' },
+              note: 'Install and configure Gradle and other tools like Pipenv' },
+            { loc: [48, 52], title: 'Check Documentation',
+              note: 'Ensure that the provided documentation is still valid' },
+            { loc: [52, 58], title: 'Run Gradle Checks',
+              note: 'Check, build, and run the student\'s source code' },
+            { loc: [58, 60], title: 'Perform GatorGrader\'s Checks',
+              note: 'Use GatorGrader to perform all of the specified checks' },
           ]}/>
         {/* Slide } */}
 
@@ -1012,8 +1026,8 @@ export default class Presentation extends Component {
           <List bold textColor={darktext} textAlign="left" textSize="2em" margin={minimalHorizontalPadding} start={1}>
             <ListItem margin={minimalHorizontalPadding}>Computational Expression</ListItem>
             <ListItem margin={minimalHorizontalPadding}>Data Abstraction</ListItem>
-            <ListItem margin={minimalHorizontalPadding}>Web Development</ListItem>
             <ListItem margin={minimalHorizontalPadding}>Software Engineering</ListItem>
+            <ListItem margin={minimalHorizontalPadding}>Web Development</ListItem>
             <ListItem margin={minimalHorizontalPadding}>Artificial Intelligence</ListItem>
           </List>
           </Appear>
