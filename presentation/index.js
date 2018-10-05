@@ -940,9 +940,15 @@ export default class Presentation extends Component {
             </Fill>
           </Layout>
 
+          <Appear>
+          <Text bold textSize="1.35em" margin={-10} height={standardHorizontalPadding*2} textColor="tertiary">
+            Suitable for use in projects implemented in different languages, the
+            Gradle plugin performs GatorGrader checks in parallel
+          </Text>
+          </Appear>
+
         </Slide>
         {/* Slide } */}
-
 
         {/* Slide { */}
         <CodeSlide
