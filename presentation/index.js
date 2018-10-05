@@ -890,7 +890,58 @@ export default class Presentation extends Component {
 
         {/* SECTION: Configure } */}
 
-        {/* SECTION: Design Principles { */}
+        {/* SECTION: Running the Tools { */}
+
+        {/* Slide { */}
+        <Slide bgColor="primary">
+          <Heading fit textColor="darktext">
+            Efficient Project Grading
+          </Heading>
+
+          <Layout>
+            <Text height={standardHorizontalPadding*2}>
+              &nbsp;
+            </Text>
+          </Layout>
+
+          <Layout>
+            <Fill>
+              <Heading size={1} textColor="secondary" margin={standardMargin}>
+                <Script/>
+              </Heading>
+            </Fill>
+            <Fill>
+              <Heading size={1} textColor="secondary" margin={standardMargin}>
+                <Arrow/>
+              </Heading>
+            </Fill>
+            <Fill>
+              <Heading size={1} textColor="secondary" margin={standardMargin}>
+                <Gradle/>
+              </Heading>
+            </Fill>
+          </Layout>
+
+          <Layout>
+            <Fill>
+              <Heading size={4} textColor="secondary" margin={standardMargin}>
+                Python
+              </Heading>
+            </Fill>
+            <Fill>
+              <Heading size={1} textColor="secondary" margin={standardMargin}>
+                &nbsp;
+              </Heading>
+            </Fill>
+            <Fill>
+              <Heading size={4} textColor="secondary" margin={standardMargin}>
+                Gradle
+              </Heading>
+            </Fill>
+          </Layout>
+
+        </Slide>
+        {/* Slide } */}
 
 
         {/* Slide { */}
@@ -980,57 +1031,6 @@ export default class Presentation extends Component {
             Used during laboratory, practical, and class
           </Heading>
           </Appear>
-
-        </Slide>
-        {/* Slide } */}
-
-        {/* Slide { */}
-        <Slide bgColor="primary">
-          <Heading fit textColor="darktext">
-            Exciting New Features
-          </Heading>
-
-          <Layout>
-            <Text height={standardHorizontalPadding*2}>
-              &nbsp;
-            </Text>
-          </Layout>
-
-          <Layout>
-            <Fill>
-              <Heading size={1} textColor="secondary" margin={standardMargin}>
-                <Script/>
-              </Heading>
-            </Fill>
-            <Fill>
-              <Heading size={1} textColor="secondary" margin={standardMargin}>
-                <Arrow/>
-              </Heading>
-            </Fill>
-            <Fill>
-              <Heading size={1} textColor="secondary" margin={standardMargin}>
-                <Gradle/>
-              </Heading>
-            </Fill>
-          </Layout>
-
-          <Layout>
-            <Fill>
-              <Heading size={4} textColor="secondary" margin={standardMargin}>
-                Script
-              </Heading>
-            </Fill>
-            <Fill>
-              <Heading size={1} textColor="secondary" margin={standardMargin}>
-                &nbsp;
-              </Heading>
-            </Fill>
-            <Fill>
-              <Heading size={4} textColor="secondary" margin={standardMargin}>
-                Gradle
-              </Heading>
-            </Fill>
-          </Layout>
 
         </Slide>
         {/* Slide } */}
@@ -1151,7 +1151,7 @@ export default class Presentation extends Component {
           <Layout>
             <Appear transitionDuration={100}>
               <Fill>
-                <Text bold textSize="1.25em" height={standardHorizontalPadding*2} textColor="tertiary">
+                <Text bold textSize="1.35em" height={standardHorizontalPadding*2} textColor="tertiary">
                   See projects like GatorGrader and GatorGradle in the GatorEducator organization on GitHub
                 </Text>
               </Fill>
@@ -1209,7 +1209,7 @@ export default class Presentation extends Component {
             </Fill>
           </Layout>
 
-          <Heading size={4} textColor="darktext">
+          <Heading size={4} textColor="tertiary">
             GatorEducator/GatorGrader
           </Heading>
 
