@@ -971,7 +971,7 @@ export default class Presentation extends Component {
           lang="js"
           code={require('raw-loader!../assets/code/travis.yml')}
           ranges={[
-            { loc: [0, 270], title: 'Let\'s Configure Travis CI!',
+            { loc: [0, 0], title: 'Let\'s Configure Travis CI!',
               note: 'Travis CI runs private builds for every student' },
             { loc: [0, 5], title: 'Use Java and Python',
               note: 'Java is the main language for this introductory course' },
@@ -984,7 +984,7 @@ export default class Presentation extends Component {
             { loc: [52, 58], title: 'Run Gradle Checks',
               note: 'Check, build, and run the student\'s source code' },
             { loc: [58, 60], title: 'Perform GatorGrader\'s Checks',
-              note: 'Use GatorGrader to perform all of the specified checks' },
+              note: 'Install and use GatorGrader to perform all of the checks' },
           ]}/>
         {/* Slide } */}
 
@@ -993,22 +993,18 @@ export default class Presentation extends Component {
           lang="js"
           code={require('raw-loader!../assets/code/gatorgrader.sh')}
           ranges={[
-            { loc: [0, 270], title: 'Let\'s Configure GatorGrader!',
-              note: 'Create a script for local use or on Travis' },
-            { loc: [9, 16], title: 'Decide if Check Passes',
-              note: 'The build passes if all of the checks pass' },
-            { loc: [53, 60], title: 'Define the Command Line',
-              note: 'Use getopt to parse the command-line arguments' },
-            { loc: [164, 169], title: 'Check that a File Exists',
-              note: 'GatorGrader ensures the existence of writing' },
-            { loc: [169, 175], title: 'Check for Comments',
-              note: 'GatorGrader ensures that students comment code' },
-            { loc: [179, 184], title: 'Check the Output',
-              note: 'GatorGrader checks the number of output lines' },
-            { loc: [189, 194], title: 'Inspect the Output',
-              note: 'GatorGrader inspects the output for patterns' },
-            { loc: [197, 201], title: 'Count the Commits',
-              note: 'GatorGrader ensures a minimal commit count' },
+            { loc: [0, 0], title: 'Let\'s Configure GatorGrader!',
+              note: 'Configure GatorGrader for use through Gradle' },
+            { loc: [0, 5], title: 'Configure an Assignment',
+              note: 'The build should fail if any of the checks do not pass' },
+            { loc: [8, 14], title: 'Specify Source Code Checks',
+              note: 'Count different types of comments and inspect the output' },
+            { loc: [17, 22], title: 'Check Technical Writing',
+              note: 'Run linters and check the length of written paragraphs' },
+            { loc: [22, 24], title: 'Check GitHub Repository',
+              note: 'Ensure that the students commit a sufficient number of times' },
+            { loc: [26, 29], title: 'Check Command Output',
+              note: 'Ensure that the program runs and produces correct output' },
           ]}/>
         {/* Slide } */}
 
@@ -1045,12 +1041,12 @@ export default class Presentation extends Component {
 
           <Text bold textSize="1.25em" lineHeight={2.5} textColor="tertiary">
             <pre>
-            Passed 6/13 (46%) of checks for fall-2018-lab3!
+            Passed 6/13 (46%) of checks for fall-2018-lab3
             </pre>
           </Text>
 
-          <Text bold textSize="1.5em" lineHeight={2.5} textColor="secondary">
-            Many additional checks are also possible
+          <Text bold textAlign="left" textSize="1.5em" lineHeight={2.5} textColor="secondary">
+            Many additional checks are also possible!
           </Text>
 
         </Slide>
