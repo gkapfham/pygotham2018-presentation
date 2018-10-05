@@ -1046,6 +1046,14 @@ export default class Presentation extends Component {
 
         {/* Slide { */}
         <Slide transitionDuration={0} transition={['']} bgColor="primary">
+          <Heading fill bold caps size={1} lineHeight={1.1} textColor="tertiary">
+            Check out GatorGrader and affiliated tools on GitHub!
+          </Heading>
+        </Slide>
+        {/* Slide } */}
+
+        {/* Slide { */}
+        <Slide transitionDuration={0} transition={['']} bgColor="primary">
           <Heading fit textColor="darktext">
             Let's Collaborate
           </Heading>
@@ -1082,20 +1090,6 @@ export default class Presentation extends Component {
             </Fill>
           </Layout>
 
-        </Slide>
-        {/* Slide } */}
-
-        {/* Slide { */}
-        <Slide transition={['slide']}>
-          <Heading fit size={1} textColor="darktext">
-            Check out GatorGrader on GitHub!
-          </Heading>
-          <Layout>
-            <Text height={standardHorizontalPadding}>
-              &nbsp;
-            </Text>
-          </Layout>
-          <Image src={images.GatorGrader}/>
         </Slide>
         {/* Slide } */}
 
