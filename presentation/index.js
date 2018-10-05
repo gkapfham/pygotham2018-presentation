@@ -661,9 +661,9 @@ export default class Presentation extends Component {
           <Appear transitionDuration={100}>
           <List bold textColor={darktext} textAlign="left" textSize="2em" margin={minimalHorizontalPadding} start={1}>
             <ListItem margin={minimalHorizontalPadding}>Black</ListItem>
-            <ListItem margin={minimalHorizontalPadding}>Pylint</ListItem>
             <ListItem margin={minimalHorizontalPadding}>Flake8</ListItem>
             <ListItem margin={minimalHorizontalPadding}>Pipenv</ListItem>
+            <ListItem margin={minimalHorizontalPadding}>Pylint</ListItem>
             <ListItem margin={minimalHorizontalPadding}>Pytest</ListItem>
             <ListItem margin={minimalHorizontalPadding}>Pytest Plugins (e.g., Codecov)</ListItem>
           </List>
