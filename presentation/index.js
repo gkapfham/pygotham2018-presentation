@@ -958,7 +958,7 @@ export default class Presentation extends Component {
 
           <Appear>
           <Text bold textSize="1.4em" margin={-10} height={standardHorizontalPadding*2} textColor="tertiary">
-            Suitable for use in projects implemented in different languages, the
+            Suitable for use in projects implemented in different programming languages, the
             Gradle plugin performs GatorGrader checks in parallel
           </Text>
           </Appear>
@@ -1010,6 +1010,50 @@ export default class Presentation extends Component {
             { loc: [197, 201], title: 'Count the Commits',
               note: 'GatorGrader ensures a minimal commit count' },
           ]}/>
+        {/* Slide } */}
+
+        {/* Slide { */}
+        <Slide transition={['']} bgColor="primary">
+
+          <Heading fit textColor="darktext">
+            GatorGrader's Output
+          </Heading>
+
+          <Layout>
+            <Text height={standardHorizontalPadding*.5}>
+              &nbsp;
+            </Text>
+          </Layout>
+
+          <Text bold textSize="1.25em" lineHeight={1.0} textColor="darktext">
+            <pre>
+            ✘  Repository has at least 14 commit(s) {'\n'}➔ Found 9 commit(s) in the Git repository
+            </pre>
+          </Text>
+
+          <Text bold textSize="1.25em" lineHeight={2.0} textColor="darktext">
+            <pre>
+            ✘  The writing has at least 100 word(s) ...{'\n'}➔ Found 12 word(s) in a paragraph of ...
+            </pre>
+          </Text>
+
+          <Text bold textSize="1.25em" lineHeight={2.0} textColor="darktext">
+            <pre>
+            ✘  The output has one of the '28.75' fragment{'\n'}➔  Found 0 fragment(s) in the output ...
+            </pre>
+          </Text>
+
+          <Text bold textSize="1.25em" lineHeight={2.5} textColor="tertiary">
+            <pre>
+            Passed 6/13 (46%) of checks for fall-2018-lab3!
+            </pre>
+          </Text>
+
+          <Text bold textSize="1.5em" lineHeight={2.5} textColor="secondary">
+            Many additional checks are also possible
+          </Text>
+
+        </Slide>
         {/* Slide } */}
 
         {/* Slide { */}
