@@ -1031,22 +1031,6 @@ export default class Presentation extends Component {
         {/* Slide { */}
         <Slide transitionDuration={0} transition={['']} bgColor="primary">
           <Heading fill bold caps size={1} lineHeight={1.1} textColor="tertiary">
-            What features best support emerging programmers?
-          </Heading>
-        </Slide>
-        {/* Slide } */}
-
-        {/* Slide { */}
-        <Slide transitionDuration={0} transition={['']} bgColor="primary">
-          <Heading fill bold caps size={1} lineHeight={1.1} textColor="tertiary">
-            How do team members influence learning?
-          </Heading>
-        </Slide>
-        {/* Slide } */}
-
-        {/* Slide { */}
-        <Slide transitionDuration={0} transition={['']} bgColor="primary">
-          <Heading fill bold caps size={1} lineHeight={1.1} textColor="tertiary">
             Check out GatorGrader and affiliated tools on GitHub!
           </Heading>
         </Slide>
