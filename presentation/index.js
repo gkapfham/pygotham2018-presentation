@@ -947,7 +947,7 @@ export default class Presentation extends Component {
             Courses and Topics
           </Heading>
           <Layout>
-            <Text height={standardHorizontalPadding}>
+            <Text height={standardHorizontalPadding*.5}>
               &nbsp;
             </Text>
           </Layout>
@@ -971,13 +971,13 @@ export default class Presentation extends Component {
           </Heading>
           </Appear>
           <Layout>
-            <Text height={standardHorizontalPadding}>
+            <Text height={standardHorizontalPadding*.5}>
               &nbsp;
             </Text>
           </Layout>
           <Appear>
           <Heading fit textColor="secondary">
-            Laboratory, practical, in-class
+            Used during laboratory, practical, and class
           </Heading>
           </Appear>
 
