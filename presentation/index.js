@@ -462,7 +462,7 @@ export default class Presentation extends Component {
           </Layout>
 
           <Layout>
-            <Text height={standardHorizontalPadding}>
+            <Text height={standardHorizontalPadding*.5}>
               &nbsp;
             </Text>
           </Layout>
@@ -470,7 +470,7 @@ export default class Presentation extends Component {
           <Layout>
             <Appear transitionDuration={100}>
               <Fill>
-                <Text bold textSize="1.5em" height={standardHorizontalPadding*2} textColor="tertiary">
+                <Text bold textSize="2.0em" height={standardHorizontalPadding*2} textColor="tertiary">
                   Let's explore each of these in greater detail!
                 </Text>
               </Fill>
@@ -957,7 +957,7 @@ export default class Presentation extends Component {
           </Layout>
 
           <Appear>
-          <Text bold textSize="1.35em" margin={-10} height={standardHorizontalPadding*2} textColor="tertiary">
+          <Text bold textSize="1.4em" margin={-10} height={standardHorizontalPadding*2} textColor="tertiary">
             Suitable for use in projects implemented in different languages, the
             Gradle plugin performs GatorGrader checks in parallel
           </Text>
