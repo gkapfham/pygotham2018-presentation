@@ -971,7 +971,7 @@ export default class Presentation extends Component {
           lang="js"
           code={require('raw-loader!../assets/code/travis.yml')}
           ranges={[
-            { loc: [0, 270], title: 'Let\'s Configure Travis CI',
+            { loc: [0, 270], title: 'Let\'s Configure Travis CI!',
               note: 'Travis CI runs private builds for every student' },
             { loc: [0, 5], title: 'Use Java and Python',
               note: 'Java is the main language for this introductory course' },
@@ -993,7 +993,7 @@ export default class Presentation extends Component {
           lang="js"
           code={require('raw-loader!../assets/code/gatorgrader.sh')}
           ranges={[
-            { loc: [0, 270], title: 'Let\'s Call GatorGrader',
+            { loc: [0, 270], title: 'Let\'s Configure GatorGrader!',
               note: 'Create a script for local use or on Travis' },
             { loc: [9, 16], title: 'Decide if Check Passes',
               note: 'The build passes if all of the checks pass' },
