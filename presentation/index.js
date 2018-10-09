@@ -244,7 +244,7 @@ export const Travis = () => (
 )
 
 export const TravisGiant = () => (
-  <FontAwesomeIcon icon={['fas', 'user-secret']} transform="grow-40" color={darktext}/>
+  <FontAwesomeIcon icon={['fas', 'user-secret']} transform="grow-30" color={darktext}/>
 )
 
 export const Twitter = () => (
@@ -462,7 +462,7 @@ export default class Presentation extends Component {
           </Layout>
 
           <Layout>
-            <Text height={standardHorizontalPadding*.5}>
+            <Text height={standardHorizontalPadding*.25}>
               &nbsp;
             </Text>
           </Layout>
@@ -471,7 +471,7 @@ export default class Presentation extends Component {
             <Appear transitionDuration={100}>
               <Fill>
                 <Text bold textSize="2.0em" height={standardHorizontalPadding*2} textColor="tertiary">
-                  Let's explore each of these in greater detail!
+                  Discuss in greater detail!
                 </Text>
               </Fill>
             </Appear>
@@ -481,7 +481,7 @@ export default class Presentation extends Component {
         {/* Slide } */}
 
         {/* Slide { */}
-        <Slide transitionDuration={0} transition={['']} align="center center" bgColor="primary">
+        <Slide transitionDuration={0} transition={['slide']} align="center center" bgColor="primary">
 
         <Layout>
           <Fill>
@@ -494,7 +494,7 @@ export default class Presentation extends Component {
         {/* Slide } */}
 
         {/* Slide { */}
-        <Slide transitionDuration={0} transition={['']} align="center center" bgColor="primary">
+        <Slide transitionDuration={0} transition={['slide']} align="center center" bgColor="primary">
 
         <Layout>
           <Fill>
@@ -507,7 +507,7 @@ export default class Presentation extends Component {
         {/* Slide } */}
 
         {/* Slide { */}
-        <Slide transitionDuration={0} transition={['']} align="center center" bgColor="primary">
+        <Slide transitionDuration={0} transition={['slide']} align="center center" bgColor="primary">
 
         <Layout>
           <Fill>
@@ -704,11 +704,11 @@ export default class Presentation extends Component {
         {/* Slide { */}
         <Slide transition={['']} bgColor="primary">
           <Heading fill bold caps size={1} lineHeight={1.1} textColor="tertiary">
-            Design principles that guided tool implementation
+            Design principles that guided development
           </Heading>
 
           <Layout>
-            <Text height={standardHorizontalPadding}>
+            <Text height={standardHorizontalPadding*.25}>
             &nbsp;
             </Text>
           </Layout>
@@ -745,7 +745,7 @@ export default class Presentation extends Component {
           <Layout>
             <Appear transitionDuration={100}>
               <Fill>
-                <Text bold textSize="1.35em" height={standardHorizontalPadding*2} textColor="secondary">
+                <Text bold textSize="1.15em" height={standardHorizontalPadding*2} textColor="secondary">
                     ‣ Working code is not sufficient: aim for simplicity
                 </Text>
               </Fill>
@@ -755,7 +755,7 @@ export default class Presentation extends Component {
           <Layout>
             <Appear transitionDuration={100}>
               <Fill>
-                <Text bold textSize="1.35em" height={standardHorizontalPadding*2} textColor="secondary">
+                <Text bold textSize="1.15em" height={standardHorizontalPadding*2} textColor="secondary">
                   ‣ Code that hasn't been executed does not work
                 </Text>
               </Fill>
@@ -765,7 +765,7 @@ export default class Presentation extends Component {
           <Layout>
             <Appear transitionDuration={100}>
               <Fill>
-                <Text bold textSize="1.35em" height={standardHorizontalPadding*2} textColor="secondary">
+                <Text bold textSize="1.15em" height={standardHorizontalPadding*2} textColor="secondary">
                   ‣ Simple interfaces over simple implementations
                 </Text>
               </Fill>
@@ -775,7 +775,7 @@ export default class Presentation extends Component {
           <Layout>
             <Appear transitionDuration={100}>
               <Fill>
-                <Text bold textSize="1.35em" height={standardHorizontalPadding*2} textColor="secondary">
+                <Text bold textSize="1.15em" height={standardHorizontalPadding*2} textColor="secondary">
                   ‣ Great documentation encourages contributions
                 </Text>
               </Fill>
@@ -795,7 +795,7 @@ export default class Presentation extends Component {
             Flexible Checking
           </Heading>
           <Layout>
-            <Text height={standardHorizontalPadding*2}>
+            <Text height={standardHorizontalPadding*1}>
               &nbsp;
             </Text>
           </Layout>
@@ -828,7 +828,7 @@ export default class Presentation extends Component {
             <Appear transitionDuration={100}>
               <Fill>
                 <Text bold textSize="1.35em" height={standardHorizontalPadding*2} textColor="tertiary">
-                  See projects like GatorGrader and GatorGradle in the GatorEducator organization on GitHub
+                  See GatorGrader and GatorGradle in the GatorEducator organization on GitHub
                 </Text>
               </Fill>
             </Appear>
@@ -957,9 +957,9 @@ export default class Presentation extends Component {
           </Layout>
 
           <Appear>
-          <Text bold textSize="1.4em" margin={-10} height={standardHorizontalPadding*2} textColor="tertiary">
-            Suitable for use in projects implemented in different programming languages, the
-            Gradle plugin performs GatorGrader checks in parallel
+          <Text bold textSize="1.2em" margin={-30} height={standardHorizontalPadding*4} textColor="tertiary">
+            Supporting different programming languages, the
+            Gradle plugin runs GatorGrader checks in parallel
           </Text>
           </Appear>
 
@@ -1021,32 +1021,28 @@ export default class Presentation extends Component {
             </Text>
           </Layout>
 
-          <Text bold textSize="1.25em" lineHeight={1.0} textColor="darktext">
+          <Text bold textAlign="left" textSize="1.25em" margin={-1} lineHeight={1.0} textColor="darktext">
             <pre>
             ✘  Repository has at least 14 commit(s) {'\n'}➔ Found 9 commit(s) in the Git repository
             </pre>
           </Text>
 
-          <Text bold textSize="1.25em" lineHeight={2.0} textColor="darktext">
+          <Text bold textAlign="left" textSize="1.25em" lineHeight={2.0} textColor="darktext">
             <pre>
-            ✘  The writing has at least 100 word(s) ...{'\n'}➔ Found 12 word(s) in a paragraph of ...
+            ✘  The writing has at least 100 word(s){'\n'}➔ Found 12 word(s) in a paragraph
             </pre>
           </Text>
 
-          <Text bold textSize="1.25em" lineHeight={2.0} textColor="darktext">
+          <Text bold textAlign="left" textSize="1.25em" lineHeight={2.0} textColor="darktext">
             <pre>
-            ✘  The output has one of the '28.75' fragment{'\n'}➔  Found 0 fragment(s) in the output ...
+            ✘  The output has one of the '28.75'{'\n'}➔ Found 0 fragment(s) in the output
             </pre>
           </Text>
 
-          <Text bold textSize="1.25em" lineHeight={2.5} textColor="tertiary">
+          <Text bold textAlign="left" textSize="1.15em" lineHeight={2.5} textColor="tertiary">
             <pre>
-            Passed 6/13 (46%) of checks for fall-2018-lab3
+            Passed 6/13 (46%) of checks for f2018-lab3
             </pre>
-          </Text>
-
-          <Text bold textAlign="left" textSize="1.5em" lineHeight={2.5} textColor="secondary">
-            Many additional checks are also possible!
           </Text>
 
         </Slide>
@@ -1072,7 +1068,7 @@ export default class Presentation extends Component {
           </List>
           </Appear>
           <Layout>
-            <Text height={standardHorizontalPadding*.5}>
+            <Text height={standardHorizontalPadding*.1}>
               &nbsp;
             </Text>
           </Layout>
@@ -1198,7 +1194,7 @@ export default class Presentation extends Component {
           <Layout>
             <Fill>
               <Heading size={4} textColor="secondary" margin={standardMargin}>
-                Pull Requests
+                New Checks
               </Heading>
             </Fill>
             <Fill>
@@ -1211,8 +1207,8 @@ export default class Presentation extends Component {
           <Layout>
             <Appear transitionDuration={100}>
               <Fill>
-                <Text bold textSize="1.35em" height={standardHorizontalPadding*2} textColor="tertiary">
-                  See projects like GatorGrader and GatorGradle in the GatorEducator organization on GitHub
+                <Text bold textSize="1.25em" height={standardHorizontalPadding*2} textColor="tertiary">
+                  See GatorGrader and GatorGradle in the GatorEducator organization on GitHub
                 </Text>
               </Fill>
             </Appear>
