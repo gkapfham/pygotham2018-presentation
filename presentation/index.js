@@ -1208,7 +1208,7 @@ export default class Presentation extends Component {
             <Appear transitionDuration={100}>
               <Fill>
                 <Text bold textSize="1.25em" height={standardHorizontalPadding*2} textColor="tertiary">
-                  See GatorGrader and GatorGradle in GatorEducator on GitHub
+                  See GatorGrader and GatorGradle in the GatorEducator organization on GitHub
                 </Text>
               </Fill>
             </Appear>
