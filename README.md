@@ -1,15 +1,15 @@
-# pyohio2018-presentation
+# pygotham2018-presentation
 
-[![Build Status](https://api.travis-ci.org/gkapfham/pyohio2018-presentation.svg?branch=master)](https://travis-ci.org/gkapfham/pyohio2018-presentation) [![made-with-spectacle](https://img.shields.io/badge/Made%20with-Spectacle-orange.svg)](https://github.com/FormidableLabs/spectacle)
+[![Build Status](https://api.travis-ci.org/gkapfham/pygotham2018-presentation.svg?branch=master)](https://travis-ci.org/gkapfham/pygotham2018-presentation) [![made-with-spectacle](https://img.shields.io/badge/Made%20with-Spectacle-orange.svg)](https://github.com/FormidableLabs/spectacle)
 
 This repository contains the HTML source code and additional resources for a
 presentation that I, [Gregory M.
-Kapfhammer](https://www.gregorykapfhammer.com/), gave during at the 2018 edition
-of the PyOhio conference. The presentation's source code uses the
+Kapfhammer](https://www.gregorykapfhammer.com/), gave during at the 2018
+edition of the PyGotham conference. The presentation's source code uses the
 [Spectacle](https://github.com/FormidableLabs/spectacle) framework to control
 the display of each slide. I have developed a custom theme for the slides that
-manages the formatting, color scheme, and the use of icons. All of the colors in
-the presentation come from the Material Design color palette. Finally, the
+manages the formatting, color scheme, and the use of icons. All of the colors
+in the presentation come from the Material Design color palette. Finally, the
 presentation uses icons from [Font Awesome](https://fontawesome.com/) and
 customized versions of the [Spectacle
 Code](https://github.com/jamiebuilds/spectacle-code-slide) and [Spectacle
@@ -20,7 +20,7 @@ Terminal](https://github.com/elijahmanor/spectacle-terminal) plugins.
 You can type the following command if you want to clone this repository:
 
 ```shell
-git clone https://github.com/gkapfham/pyohio2018-presentation.git
+git clone https://github.com/gkapfham/pygotham2018-presentation.git
 ```
 
 Now you should install of all of the packages needed for the presentation:
