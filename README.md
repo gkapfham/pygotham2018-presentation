@@ -1,6 +1,6 @@
 # pygotham2018-presentation
 
-[![Build Status](https://api.travis-ci.org/gkapfham/pygotham2018-presentation.svg?branch=master)](https://travis-ci.org/gkapfham/pygotham2018-presentation) [![made-with-spectacle](https://img.shields.io/badge/Made%20with-Spectacle-orange.svg)](https://github.com/FormidableLabs/spectacle)
+[![Build Status](https://api.travis-ci.com/gkapfham/pygotham2018-presentation.svg?branch=master)](https://travis-ci.com/gkapfham/pygotham2018-presentation) [![made-with-spectacle](https://img.shields.io/badge/Made%20with-Spectacle-orange.svg)](https://github.com/FormidableLabs/spectacle)
 
 This repository contains the HTML source code and additional resources for a
 presentation that I, [Gregory M.
